@@ -5,14 +5,23 @@ import (
 	"github.com/labstack/echo"
 )
 
-func handler(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello World")
+type Text struct {
+  Body string `json:"text" form:"text" query:"text"`
 }
+
+func handler(c echo.Context) (err error) {
+  u := new(Text)
+  if err = c.Bind(u); err != nil {
+    return
+  }
+  return c.JSON(http.StatusOK, u)
+}
+
 
 func main() {
 	e := echo.New()
 
-	e.GET("/", handler)
+	e.POST("/", handler)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
