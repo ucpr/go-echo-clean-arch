@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"io"
 
-//	"github.com/ucpr/go-echo-sample/domain"
+//	"github.com/ucpr/go-echo-clean-arch/domain"
 //	"../../usecase"
 )
 

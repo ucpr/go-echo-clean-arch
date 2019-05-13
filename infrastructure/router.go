@@ -5,7 +5,7 @@ import (
 	"html/template"
 	"github.com/labstack/echo"
 
-	"github.com/ucpr/go-echo-sample/interfaces/controllers"
+	"github.com/ucpr/go-echo-clean-arch/interfaces/controllers"
 )
 
 func init() {
