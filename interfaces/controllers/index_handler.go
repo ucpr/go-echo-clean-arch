@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"../../domain"
+	"github.com/ucpr/go-echo-sample/domain"
 //	"../../usecase"
 )
 

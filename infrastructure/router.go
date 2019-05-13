@@ -3,7 +3,7 @@ package infrastructure
 import (
 	"github.com/labstack/echo"
 
-	"../interfaces/controllers"
+	"github.com/ucpr/go-echo-sample/interfaces/controllers"
 )
 
 func init() {
