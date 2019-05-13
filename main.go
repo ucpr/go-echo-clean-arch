@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"./handler"
+	"github.com/ucpr/go-echo-sample/handler"
 )
 
 func main() {
