@@ -1,5 +1,5 @@
 package domain
 
 type Data struct {
-	Body string `json:"text" form:"text" query:"text"`
+	Body string `json:"text"`
 }
